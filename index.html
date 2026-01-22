@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLANCO | Luxury Fragrance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bg-music" loop>
+  <source src="music/music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-toggle" class="music-btn">🔊 Play Music</button>
+
+<nav class="navbar">
+  <div class="logo">BLANCO</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Collection</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Define Your Scent</h1>
+    <p>Confidence. Elegance. Identity.</p>
+  </div>
+</section>
+
+<section class="video-section">
+  <h2 class="video-title">Power Of Scent</h2>
+
+  <div class="video-box">
+    <video controls playsinline>
+      <source src="video/iklan.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="about-box">
+    <h2>BLANCO</h2>
+    <p>
+      BLANCO is a modern fragrance house inspired by
+      elegance, confidence, and timeless presence.
+      Each scent is crafted to leave a powerful impression.
+    </p>
+  </div>
+</section>
+
+<section id="products" class="section products">
+  <div class="section-header">
+    <h2>Our Categories</h2>
+    <p>Crafted for every personality</p>
+  </div>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <h3>MEN</h3>
+      <p>Bold · Strong · Confident</p>
+      <button class="category-btn" onclick="showProducts('men')">
+        Men's Collection
+      </button>
+    </div>
+
+    <div class="product-card">
+      <h3>WOMEN</h3>
+      <p>Elegant · Graceful · Sensual</p>
+      <button class="category-btn" onclick="showProducts('women')">
+        Women's Collection
+      </button>
+    </div>
+
+    <div class="product-card">
+      <h3>UNISEX</h3>
+      <p>Fresh · Modern · Balanced</p>
+      <button class="category-btn" onclick="showProducts('unisex')">
+        Unisex Collection
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2 id="category-title">Our Fragrances</h2>
+
+  <div class="product-grid" id="product-results">
+
+    <div class="product-card" data-cat="men">
+      <img src="img/aqua.jpg" alt="Aqua Fresh">
+      <h3>Aqua Fresh</h3>
+      <p>RM 35</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-cat="men">
+      <img src="img/aven.jpg" alt="Aven">
+      <h3>Aven</h3>
+      <p>RM 35</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-cat="women">
+      <img src="img/sexyScandalous.jpg" alt="Sexy Scandalous">
+      <h3>Sexy Scandalous</h3>
+      <p>RM 35</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-cat="unisex">
+      <img src="img/comboU.jpg" alt="Combo Couple">
+      <h3>Combo Couple</h3>
+      <p>RM 70</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="social-contact">
+  <h3>Connect With Us</h3>
+  <div class="social-links">
+    <a href="#"><img src="img/whatapps.jpg" width="30"></a>
+    <a href="#"><img src="img/facebook.png" width="30"></a>
+    <a href="#"><img src="img/instagram.png" width="30"></a>
+    <a href="#"><img src="img/tiktok.png" width="35"></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 BLANCO. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
